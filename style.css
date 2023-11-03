@@ -1,0 +1,261 @@
+body {
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  background-image: url("./images/bg-pattern-top-desktop.svg"),
+    url("./images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -10% -5%, 100% 100%;
+  background-size: 50%, 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 10% 10% 5% 10%;
+}
+
+.left {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+
+.bodycopy {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: hsl(300, 43%, 22%);
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.board {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  padding: 10px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 8px;
+}
+
+.board-1 {
+  align-self: flex-start;
+}
+
+.board-2 {
+  align-self: center;
+}
+
+.board-3 {
+  align-self: flex-end;
+}
+
+.starcontainer {
+  display: flex;
+  justify-content: center;
+  transform: scale(0.9);
+  align-self: center;
+  margin: 3px 10px;
+}
+
+.star {
+  margin: 3px;
+}
+
+.action {
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  align-self: center;
+  padding: 3px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 5% 10%;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.card {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  flex-basis: 33%;
+}
+
+.card-1 {
+  transform: translateY(-15px);
+}
+
+.card-3 {
+  transform: translateY(+15px);
+}
+
+.recommendation {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  gap: 20px 0px;
+  margin: 30px 30px;
+}
+
+.profile {
+  display: flex;
+  align-self: center;
+  gap: 0px 20px;
+}
+
+.icon {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.info {
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.role {
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(333, 80%, 67%);
+}
+
+.comment {
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+footer {
+  background-color: pink;
+  padding-bottom: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(300, 43%, 22%);
+}
+
+.attribution a {
+  color: hsl(333, 80%, 67%);
+}
+
+@media only screen and (max-width: 1048px) {
+  body {
+    background-image: url("./images/bg-pattern-top-mobile.svg"),
+      url("./images/bg-pattern-bottom-mobile.svg");
+    background-position: 0% 0%, 0% 0%;
+    background-size: 1;
+  }
+  .container {
+    margin: 10% 10% 5% 10%;
+    gap: 50px;
+  }
+
+  .left {
+    align-self: center;
+    width: 50%;
+  }
+
+  .right {
+    width: 45%;
+    align-items: center;
+  }
+
+  .h1 {
+    font-size: 2.5rem;
+  }
+
+  .board {
+    flex-direction: column;
+    align-self: flex-end;
+    width: 100%;
+  }
+
+  .action {
+    text-align: center;
+  }
+  .feature {
+    width: 80vw;
+    margin: 10%;
+  }
+
+  .cardcontainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 642px) {
+  .container {
+    flex-direction: column;
+    width: 90vw;
+    margin: 20% 5% 10% 5%;
+    gap: 50px;
+  }
+
+  .left {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .h1 {
+    width: 80%;
+    font-size: 2.5rem;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .board {
+    align-self: center;
+    width: 95%;
+  }
+  .feature {
+    width: 90vw;
+    margin: 5%;
+  }
+}
