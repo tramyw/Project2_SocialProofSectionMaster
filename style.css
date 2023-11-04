@@ -157,28 +157,34 @@ body {
   line-height: 1.4;
 }
 
-footer {
-  background-color: pink;
-  padding-bottom: 15px;
+.footer {
+  width: 100vw;
+  background-color: hsl(333, 80%, 67%);
+  padding-bottom: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
 }
 
 .attribution a {
-  color: hsl(333, 80%, 67%);
+  color: hsl(300, 43%, 22%);
 }
 
-@media only screen and (max-width: 1048px) {
+@media only screen and (max-width: 840px) {
   body {
     background-image: url("./images/bg-pattern-top-mobile.svg"),
       url("./images/bg-pattern-bottom-mobile.svg");
     background-position: 0% 0%, 0% 0%;
     background-size: 1;
   }
+
   .container {
     margin: 10% 10% 5% 10%;
     gap: 50px;
@@ -209,7 +215,7 @@ footer {
   }
   .feature {
     width: 80vw;
-    margin: 10%;
+    margin: 0 10%;
   }
 
   .cardcontainer {
@@ -220,6 +226,10 @@ footer {
     width: 100%;
   }
 
+  .card {
+    padding: 10px;
+  }
+
   .card-1,
   .card-2,
   .card-3 {
@@ -227,7 +237,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 642px) {
+@media only screen and (max-width: 645px) and (min-width: 375px) {
   .container {
     flex-direction: column;
     width: 90vw;
@@ -256,6 +266,6 @@ footer {
   }
   .feature {
     width: 90vw;
-    margin: 5%;
+    margin: 0 5%;
   }
 }
